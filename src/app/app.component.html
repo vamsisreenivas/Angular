@@ -1,0 +1,43 @@
+<!--<h1>App Component Demo.</h1>
+<div #learningAngular></div>
+
+<button (click)="AddComp()">Add Dynamic Component</button>
+<h2>{{title|titlecase}}</h2>
+<h2>{{message|lowercase}}</h2>
+<h2>{{colour|uppercase}}</h2>
+<h2>{{message|customPipe}}</h2>
+<hr/>
+<div appCustomDirective (mouseover)="changeText=true" (mouseout)="changeText=false" >
+       <p *ngIf="changeText"> Angular training is interesting!</p>
+       <p *ngIf="!changeText" style="background-color: white;color:black"> Angular training is interesting!</p>
+</div>
+<hr/>-->
+<!--
+<div (mouseover)="changeText=true" (mouseout)="changeText=false">
+    <span *ngIf="!changeText">Hide</span>
+    <span *ngIf="changeText">Show</span>
+  </div>
+  
+
+<div >
+  <p appHighlightDirective (mouseover)="changeText=true" (mouseout)="changeText=false" *ngIf="!changeText"></p>
+  <p appHighlightDirective (mouseover)="changeText=true" (mouseout)="changeText=false" *ngIf="changeText"></p>
+</div>
+-->
+<h1>Assignment Problem 1</h1>
+<div appHighlightDirective (mouseover)="changeText1=true" (mouseout)="changeText1=false" >
+        <p *ngIf="changeText1">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. </p>
+        <p *ngIf="!changeText1" style="background-color: white;color:black">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. </p>
+ </div>
+<!--<hr/>
+ <h1>Assignment Problem 2</h1>-->
+
+
+<hr/>
+<h1>Assignment problem 3</h1>
+<a routerLink="Home">Home</a><br>
+<a routerLink="Contact">Contact</a><br>
+<a routerLink="About">About</a>
+
+<router-outlet><ng-template></ng-template></router-outlet>
+<hr/>

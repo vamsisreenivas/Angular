@@ -1,0 +1,9 @@
+<h2>Parent Component:</h2>
+<p>Training Feedback : {{sFeedback}}</p>
+<hr/>
+<Child-tag [cName]='sName'
+[cNumber]='sNumber'
+[cTrainer]='sTrainer'
+(CustomEvent)='sFeedback=$event'>
+
+</Child-tag>
